@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Navbar from './component/Navbar'
 import AppRoute from './routes/AppRoute'
+
 function App() {
   return (
     <div>
@@ -12,4 +13,5 @@ function App() {
     </div>
   )
 }
+
 export default App
