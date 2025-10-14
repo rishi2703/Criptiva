@@ -1,5 +1,4 @@
 import React from 'react'
-import{PiMagnifyingGlassBold} from 'react-icons/pi'
 
 const Navbar = () => {
     return (
@@ -30,7 +29,7 @@ const Navbar = () => {
                     </li>
                 </ul>
             </div>
-            {/* <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4">
                 <div className="flex items-center border border-gray-300 rounded-full px-4 py-2">
                     <input
                         type="text"
@@ -43,7 +42,7 @@ const Navbar = () => {
                 <button className="bg-black text-white font-semibold rounded-full px-6 py-2 text-sm uppercase hover:bg-gray-800 transition">
                     Connect Wallet
                 </button>
-            </div> */}
+            </div>
         </div>
     )
 }
