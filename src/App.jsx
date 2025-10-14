@@ -4,8 +4,6 @@ import Navbar from './component/Navbar'
 import AppRoute from './routes/AppRoute'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div>
       <div className='fixed top-0 left-0 bg-transparent w-full p-4'>
