@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React from 'react'
 import './App.css'
 import Navbar from './component/Navbar'
 import AppRoute from './routes/AppRoute'
@@ -6,7 +6,7 @@ import AppRoute from './routes/AppRoute'
 function App() {
   return (
     <div>
-      <div className='fixed top-0 left-0 bg-transparent w-full p-4'>
+      <div className='fixed top-0 left-0 bg-transparent w-full z-50'>
         <Navbar />
       </div>
       <AppRoute />

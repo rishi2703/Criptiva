@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
-body{
+body,html{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
   font-family: 'font-Pixelify Sans ';
 }
