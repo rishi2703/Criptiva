@@ -39,8 +39,6 @@ const Navbar = () => {
                 </ul>
                 <div className={`hidden md:flex items-center gap-4 text-xs`}>
                     <button
-                        onMouseEnter={() => setHovered(true)}
-                        onMouseLeave={() => setHovered(false)}
                         className="flex items-center gap-2 border bg-white font-semibold rounded-full px-4 py-3 uppercase hover:bg-gray-800 transition"
                     >
                         <span>
