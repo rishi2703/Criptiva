@@ -1,17 +1,14 @@
-import React from 'react'
 import './App.css'
+import Footer from './component/Footer'
 import Navbar from './component/Navbar'
 import AppRoute from './routes/AppRoute'
-
 function App() {
   return (
-    <div>
-      <div className='fixed top-0 left-0 bg-transparent w-full z-50'>
-        <Navbar />
-      </div>
-      <AppRoute />
+   <div >
+      <main className="mt-20">
+        <AppRoute />
+      </main>
     </div>
   )
 }
-
 export default App
