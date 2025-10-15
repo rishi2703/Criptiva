@@ -5,7 +5,7 @@ import AppRoute from './routes/AppRoute'
 function App() {
   return (
    <div >
-  <div className='z-50'>
+  <div className='z-40'>
       <Navbar/>
   </div>
       <main >

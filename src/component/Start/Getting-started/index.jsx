@@ -2,10 +2,10 @@ const GettingStarted = () => {
   return (
     <div className="flex">
       <div className="mx-8 p-6  flex-1">
-        <div className="text-[54px] font-bold mb-6">
+        <div className="text-4xl font-Semibold mb-6">
           Getting started with Criptiva
         </div>
-        <div><img src="/images/crptiva coin" alt="" /></div>
+        <div className="flex justify-center items-center"><img src="/Images/criptiva coin.png" alt="" /></div>
         <div>
           <div id="what-is-criptiva" className="mb-10 scroll-mt-24">
             <div className="text-2xl font-semibold mb-2">What is Criptiva?</div>
