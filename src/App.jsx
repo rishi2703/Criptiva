@@ -8,7 +8,7 @@ function App() {
   <div className='z-40'>
       <Navbar/>
   </div>
-      <main >
+      <main className='pt-12' >
         <AppRoute />
       </main>
     <Footer/>
