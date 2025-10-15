@@ -5,6 +5,7 @@ const GettingStarted = () => {
         <div className="text-[54px] font-bold mb-6">
           Getting started with Criptiva
         </div>
+        <div><img src="/images/crptiva coin" alt="" /></div>
         <div>
           <div id="what-is-criptiva" className="mb-10 scroll-mt-24">
             <div className="text-2xl font-semibold mb-2">What is Criptiva?</div>

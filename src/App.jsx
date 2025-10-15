@@ -5,9 +5,13 @@ import AppRoute from './routes/AppRoute'
 function App() {
   return (
    <div >
-      <main className="mt-20">
+  <div className='z-50'>
+      <Navbar/>
+  </div>
+      <main >
         <AppRoute />
       </main>
+    <Footer/>
     </div>
   )
 }
