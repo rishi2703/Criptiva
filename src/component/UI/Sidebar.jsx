@@ -1,14 +1,12 @@
 // src/components/ui/sidebar.jsx
 import React, { useState } from "react"
-import { Link } from "react-router-dom"
+import { Link} from "react-router-dom"
 import { ChevronDown, ChevronRight } from "lucide-react"
-// import { cn } from "../../lib/utils"
 
 export function Sidebar() {
   const [isOpen, setIsOpen] = useState(true)
-
   const navItems = [
-    { label: "Getting started with Bridge Key", path: "/getting-started" },
+    { label: "Getting started with Bridge Key", path: "/getting-started-with-Criptiva" },
     { label: "Creating a new wallet", path: "/create-wallet" },
     { label: "Using an existing wallet", path: "/using-existing-wallet" },
     { label: "How to transfer assets from a centralized exchange to Bridge Key", path: "/transfer-assets" },
@@ -24,11 +22,11 @@ export function Sidebar() {
   return (
     <aside className="h-screen w-72 bg-white border-r border-gray-200 p-4 overflow-y-auto">
       <div>
+        
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="w-full flex justify-between items-center px-3 py-2 rounded-md font-semibold text-sm text-left hover:bg-gray-100"
-        >
-          <span>Start</span>
+          className="w-full flex justify-between items-center px-3 py-2 rounded-md font-semibold text-xl text-left hover:bg-gray-100"
+        >start
           {isOpen ? <ChevronDown className="w-4 h-4" /> : <ChevronRight className="w-4 h-4" />}
         </button>
 

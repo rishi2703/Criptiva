@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
     const [showNavItems, setShowNavItems] = useState(false)
     const [openUseDropdown, setOpenUseDropdown] = useState(false)
+    // const navigate = useNavigate()
     return (
         <div className={`${showNavItems ? 'max-h-screen':'h-10'} transition-all duration-200 bg-white px-4 py-2 md:py-4 border-b-2 border-gray-200 z-50`}>
             <div className='flex justify-between items-center'>

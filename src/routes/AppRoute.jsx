@@ -1,19 +1,15 @@
-import React from "react";
-import { Navigate, Route, Routes } from "react-router-dom";
-import Home from "../pages/Home";
+
+import { Route, Routes } from "react-router-dom";
 import DashboardLayout from "../layout/DashboardLayout";
-import MainLayout from "../layout/MainLayout";
+import GettingStarted from "../component/Start/Getting-started";
+;
 
 const AppRoute = () => {
   return (
     <div>
       <Routes>
-        <Route element={MainLayout}>
-          <Route path="/" element={<Navigate to={"/home"} />} />
-          <Route path="/home" element={<Home />} />
-        </Route>
-        <Route element={DashboardLayout}>
-          <Route path="" element={<></>} />
+        <Route element={<DashboardLayout/>}>
+                  <Route path="/getting-started-with-Criptiva" element={<GettingStarted />} />
         </Route>
       </Routes>
     </div>
