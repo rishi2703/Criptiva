@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import { PiCaretUpBold, PiGlobeBold, PiMagnifyingGlassBold } from 'react-icons/pi'
-import { Link } from 'react-router-dom'
+import { Link,  } from 'react-router-dom'
 
 const Navbar = () => {
     const [openUseDropdown, setOpenUseDropdown] = useState(false)
+    // const navigate = useNavigate()
     return (
         <div className='rounded-2xl bg-white p-4 flex justify-between items-center'>
             <div className="flex items-center gap-5">
@@ -48,8 +49,6 @@ const Navbar = () => {
                 </div>
 
                 <button
-                    onMouseEnter={() => setHovered(true)}
-                    onMouseLeave={() => setHovered(false)}
                     className="relative border bg-black text-white font-semibold rounded-full px-6 py-3 text-sm uppercase hover:bg-gray-800 transition"
                 >
                     <span>
