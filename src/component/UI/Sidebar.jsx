@@ -1,7 +1,8 @@
 // src/components/ui/sidebar.jsx
 import React, { useState } from "react"
 import { Link} from "react-router-dom"
-import { ChevronDown, ChevronRight } from "lucide-react"
+// import { ChevronDown, ChevronRight } from "lucide-react"
+import { FaChevronDown, FaChevronRight } from "react-icons/fa"
 
 export function Sidebar() {
   const [isOpen, setIsOpen] = useState(true)
@@ -27,7 +28,7 @@ export function Sidebar() {
           onClick={() => setIsOpen(!isOpen)}
           className="w-full flex justify-between items-center px-3 py-2 rounded-md font-semibold text-xl text-left hover:bg-gray-100"
         >start
-          {isOpen ? <ChevronDown className="w-4 h-4" /> : <ChevronRight className="w-4 h-4" />}
+          {isOpen ? <FaChevronDown className="w-4 h-4" /> : <FaChevronRight className="w-4 h-4" />}
         </button>
 
         {isOpen && (
