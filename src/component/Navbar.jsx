@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
     const [showNavItems, setShowNavItems] = useState(false)
     const [openUseDropdown, setOpenUseDropdown] = useState(false)
-    // const navigate = useNavigate()
     return (
         <div className={`${showNavItems ? 'max-h-screen':'h-10'} transition-all duration-200 bg-white px-4 py-2 md:py-4 border-b-2 border-gray-200 z-50`}>
             <div className='flex justify-between items-center'>
@@ -40,6 +39,8 @@ const Navbar = () => {
                 </ul>
                 <div className={`hidden md:flex items-center gap-4 text-xs`}>
                     <button
+                        onMouseEnter={() => setHovered(true)}
+                        onMouseLeave={() => setHovered(false)}
                         className="flex items-center gap-2 border bg-white font-semibold rounded-full px-4 py-3 uppercase hover:bg-gray-800 transition"
                     >
                         <span>
