@@ -1,14 +1,179 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const CreateWallet = () => {
-    const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
-    <div>
-      <div className='text-[52px]'>Creating a new wallet</div>
-      <div>When you install a new instance of MetaMask, you’ll be asked if you want to create a new wallet, or if you have an existing wallet. For information on using an existing wallet, read <span onClick={()=>navigate("/using-existing-wallet")}>here</span>.</div>
-    </div>
-  )
-}
+    <div className="flex">
+      <div className="mx-10 p-12">
+        <div className="text-[52px]">Creating a new wallet</div>
+        <div>
+          When you install a new instance of Criptiva, you’ll be asked if you
+          want to create a new wallet, or if you have an existing wallet. For
+          information on using an existing wallet, read{" "}
+          <span onClick={() => navigate("/using-existing-wallet")}>here</span>.
+        </div>
+        <p>To create a new wallet, select ‘Create a new wallet’.</p>
+        <div>
+          You’ll then be asked whether you want to access and secure your wallet
+          using a Secret Recovery Phrase (SRP), or by a social account like
+          Google or Apple (Extension only). If you choose to secure your wallet
+          using Google or Apple, these credentials AND your password will both
+          be used to unlock your wallet and you need to have access to both in
+          order to access your wallet.
+        </div>
+        <div>
+          <div className="flex justify-center items-center">
+            <img
+              src="/Images/CreateWallet.png"
+              alt=""
+              className="h-[412px] w-[375px]"
+            />
+          </div>
+        </div>
+        <p>So what’s the difference?</p>
+        <ul>
+          <li>
+            <span className="font-bold"> SRP:</span> The traditional
+            self-custody method of getting set up with a 12-word phrase you
+            store securely offline that only you have access to.
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <span className="font-bold"> Social login: </span>Linking a social
+            profile like Google or Apple to your MetaMask, and setting a
+            password to create new wallets quickly and conveniently.
+          </li>
+        </ul>
+        <p className="text-2xl mt-8 font font-semibold mb-4">
+          {" "}
+          Accessing via Secret Recovery Phrase
+        </p>
+        <div className="text-lg">
+          A Secret Recovery Phrase is a unique phrase that proves you are the
+          owner of a wallet. Whoever has the SRP has full control over the
+          assets in a given wallet. If you choose to secure your wallet using an
+          SRP, you will be the only one with access to this SRP, and it is your
+          sole responsibility to secure it (read more about this principle,
+          self-custody, here).
+        </div>
+        <p className="text-2xl mt-8 font font-semibold mb-4">
+          What if I lose my SRP?
+        </p>
+        <div>
+          If you lose your SRP, or someone else gains access to it, MetaMask
+          cannot recover your wallet, and you will lose control of all of those
+          assets. This is why it is extremely important to deliberately store
+          your SRP in a secure location.
+        </div>
+        <p className="text-2xl mt-8 font mb-4">
+          Quick tips on securing an SRP:
+        </p>
+        <ul className="list-disc list-inside">
+          <li>
+            Store your SRP in a secure, offline location that only you have
+            access to.
+          </li>
+          <li>
+            Do NOT use online services, such as cloud services or password
+            managers, to store your SRP. Any location connected to the internet
+            can be (and if we’re being appropriately paranoid, will be) hacked.
+          </li>
+          <li>
+            Get creative. Nobody can tell you where the best place to store your
+            SRP is: that depends on your individual circumstances.
+          </li>
+        </ul>
+        <p className="text-2xl mt-6 mb-2">Accessing via Google or Apple note</p>
+       <div>
+         You can also create a new wallet by linking your login to a social
+        account, such as Google or Apple. If you choose this option, you will
+        select a Google or Apple account to connect, and set a secure password
+        for MetaMask. You don't need to custody a Secret Recovery Phrase (SRP)
+        with this option. Once you have set up your login, you will be able to
+        log into or reset your wallet on any device, by logging in with your
+        linked social account and the password.</div> <div className="text-2xl mt-6 mb-4">What if I lose my password? </div>
+     <div className="mb-4">   If you lose your password or someone else gains access to it, you will not
+        be able to access your wallet through this method and MetaMask cannot
+        restore your wallet. Keep your password safe, it cannot be recovered for
+        you like other social login methods.</div> <div className="text-2xl mt-6 mb-4">Quick tips for choosing a password:</div>
+      <ul>
+        <li>
+            We strongly recommend using a password manager or other computer system
+        to generate a password. Passwords generated by computers are much more
+        secure than any you think of yourself.</li><li> Do NOT repeat any passwords.
+        Choose a brand new password that you’ve never used before, and won’t use
+        again</li>
+        <li> Do NOT store your password on any unencrypted document, note, or
+        in any sort of cloud account or storage.</li></ul> <p>What about a password manager?</p>
+   <div>
+         While password managers are super convenient and great for generating
+        strong passwords, there is a risk of your password manager being hacked.
+        If your password manager is compromised, all of your passwords will be
+        compromised, and you could lose your funds. It's up to you to decide
+        your risk tolerance.</div> 
+        <div>For more information, check out this article on the
+        LastPass hack.</div> <div>
+          Once you have created your password, you can start using
+        MetaMask. This password is synced across devices that you have logged
+        into with the same Google/Apple account.</div> <div>Remember: your account will
+        still have an SRP, and we strongly recommend you secure it. See here to
+        show how to reveal your SRP. This is the only way to access your wallet
+        if you lose your password or get locked out of your Google/Apple
+        account</div> <div>note</div> <div>Any new wallets you create or import from this instance of
+        MetaMask will also be connected to the social account and password. They
+        will sync across devices and be restored when you login to a new
+        instance of MetaMask. Don't import additional wallets after you've set
+        up your social login if you don't want them linked.</div> <div>Behind the scenes</div>
+    <div>    When you connect a Google or Apple account to MetaMask, your wallet
+        still has an SRP that gives you access to your accounts. That’s the
+        nature of a standard crypto wallet like MetaMask. To let you access your
+        wallet without your SRP, MetaMask uses a cryptographic technique called
+        key sharding to safely track your wallet ownership. To do this, your SRP
+        is securely encrypted and split into five “shards” or parts. These
+        shards are stored across five different nodes, where no one, including
+        MetaMask, can access all of them. Your Google/Apple account AND password
+        are used together to decrypt your SRP.</div> <p>Which should I choose?</p> <div>
+          Choosing
+        between these options depends on your individual circumstances,
+        tolerance for risk, and privacy needs. If you choose to access and
+        secure your wallet via SRP, you will need to secure the phrase in a
+        physical, secret location. This will be your account’s single point of
+        failure, one that cannot be recovered for you, and you need to treat
+        securing it as the most critically important part of your web3
+        experience. If you choose to access and secure your wallet via a social
+        login, you will need to choose and remember a secure password, and keep
+        your social account secure. Your password and social account should be
+        treated as securely as an SRP; if you lose access to your social login,
+        or your password, nobody can recover your MetaMask for you. Hackers may
+        attempt to impersonate your social account’s security to gain access to
+        your account, so you’ll need to stay vigilant.
+        </div>
+      </div>
 
-export default CreateWallet
+      <div className="lg:block hidden">
+        <div className="w-72 h-42 border-l-8 border-purple-400 p-4 sticky top-0">
+          <div className="font-bold text-lg mb-4">Getting Started</div>
+          <ul className="space-y-2">
+            <li>
+              <a
+                href="#what-is-criptiva"
+                className="text-gray-800 hover:underline"
+              >
+                What is Criptiva?
+              </a>
+            </li>
+            <li>
+              <a href="#fund-wallet" className="text-gray-800 hover:underline">
+                Fund your wallet
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default CreateWallet;

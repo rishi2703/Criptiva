@@ -7,7 +7,7 @@ const Navbar = () => {
     const [showNavItems, setShowNavItems] = useState(false)
     const [openUseDropdown, setOpenUseDropdown] = useState(false)
     return (
-        <div className={`${showNavItems ? 'max-h-screen':'h-10'} transition-all duration-200 bg-white px-4 py-2 md:py-4 border-b-2 border-gray-200 z-50`}>
+        <div className={`${showNavItems ? 'max-h-screen':'h-10'} md:h-auto transition-all duration-200 bg-white px-4 py-2 md:py-4 border-b-2 border-gray-200 z-50`}>
             <div className='flex justify-between items-center'>
                 <div className="flex items-center gap-5">
                     <img src="\public\Images\image 1.png" className='w-25 md:w-40' alt="" />

@@ -4,14 +4,14 @@ import Navbar from './component/Navbar'
 import AppRoute from './routes/AppRoute'
 function App() {
   return (
-   <div >
-  <div className='z-40'>
-      <Navbar/>
-  </div>
-      <main className='pt-12' >
+    <div >
+      <div className='fixed w-full z-40'>
+        <Navbar />
+      </div>
+      <main className='pt-18'>
         <AppRoute />
       </main>
-    <Footer/>
+<Footer/>
     </div>
   )
 }

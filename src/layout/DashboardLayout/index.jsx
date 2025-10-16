@@ -7,14 +7,13 @@ import { Sidebar } from "../../component/UI/Sidebar";
 
 const DashboardLayout = () => {
   return (
- <div className="flex flex-col min-h-screen">
-      <div className="flex flex-1">
-        <div className="hidden lg:block w-64">
-          <Sidebar />
-        </div>
-        <div className="flex-1 p-4">
-          <Outlet />
-        </div>
+    <div className="flex h-screen overflow-hidden">
+
+      <div className="hidden lg:block w-64 flex-shrink-0">
+        <Sidebar />
+      </div>
+      <div className="flex-1 overflow-y-auto">
+        <Outlet />
       </div>
     </div>
   );
